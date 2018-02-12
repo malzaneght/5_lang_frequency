@@ -3,17 +3,19 @@ import re
 import operator
 import argparse
 
+QUANTITY_WORDS = 10
 
-def load_data(filepath):
-    with open(filepath, 'r') as txt_file:
+
+def load_data(file_path):
+    with open(file_path, 'r') as txt_file:
         return txt_file.read()
 
 
-def get_most_frequent_words(text):
+def get_most_frequent_words(users_text):
     pattern = re.compile('[\w\d_]+')
-    parsed_text = pattern.findall(text)
+    parsed_text = pattern.findall(users_text)
     counter = Counter(parsed_text)
-    return counter.most_common(10)
+    return counter.most_common(QUANTITY_WORDS)
 
 
 def print_result(input_data):
