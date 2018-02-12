@@ -1,7 +1,2 @@
-# Frequency Analysis of Words
-
-[TODO. There will be project description]
-
-# Project Goals
-
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Task: 5_lang_frequency.
+Description: This script takes the input path to a text file and displays the 10 most frequently used words in a text file.
